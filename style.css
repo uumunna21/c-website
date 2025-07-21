@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.week-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.week-selection button {
+  background: #ccc;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.week-selection span {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.date-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.date-tabs button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.date-tabs button.active {
+  background-color: black;
+  color: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #fafafa;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.sunny {
+  background-color: #fbbf24;
+}
+
+.cloudy {
+  background-color: #9ca3af;
+}
+
+.rainy {
+  background-color: #3b82f6;
+}
+
+.stormy {
+  background-color: #ef4444;
+}
+
+/* ...existing code... */
+td.sunny    { background: #ffe066; color: #b8860b; font-weight: bold; }
+td.cloudy   { background: #e0e7ef; color: #4a4a4a; font-weight: bold; }
+td.rain     { background: #b3d8f7; color: #1e3a5c; font-weight: bold; }
+td.storm    { background: #a3a3a3; color: #fff; font-weight: bold; }
+/* ...existing code... */
+
+body {
+  background: url('pexels-padrinan-19670.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

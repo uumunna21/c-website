@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>US Weather Report Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>US Weather Report Dashboard</h1>
+    <p>Comprehensive weather data for any week of the year across all US states</p>
+  </header>
+
+  <section class="week-selection">
+    <button onclick="changeWeek(-1)">&#8592;</button>
+    <span id="current-week">Week 29 (Jul 21 - Jul 27)</span>
+    <button onclick="changeWeek(1)">&#8594;</button>
+  </section>
+
+  <section class="date-tabs" id="date-tabs">
+    <!-- Date buttons inserted via JS -->
+  </section>
+
+  <section class="table-wrapper">
+    <h2 id="report-title">Weather Report - Wednesday, July 23, 2025</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>State &#8597;</th>
+          <th>Temperature (°F)</th>
+          <th>Condition</th>
+          <th>Humidity (%)</th>
+          <th>Wind (mph)</th>
+          <th>Precipitation (in)</th>
+        </tr>
+      </thead>
+      <tbody id="weather-table-body">
+        <!-- Table data inserted via JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
